@@ -1,0 +1,23 @@
+{
+  "name": "",
+  "description": "",
+  "version": "0.0.0",
+  "author": "",
+  "scripts": {
+    "test": "gulp test",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "chai": "^3.5.0",
+    "express": "^4.16.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-mocha": "^3.0.1",
+    "mocha": "^3.1.2",
+    "run-sequence": "^2.2.0",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "webpack-stream": "^4.0.0"
+  }
+}
