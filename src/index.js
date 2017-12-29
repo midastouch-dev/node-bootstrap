@@ -16,9 +16,9 @@ app.use(bodyParser.json());
 
 // Run Server
 const server = app.listen(port, host, () => {
-    console.log(`Running server on http://${host}:${port}`);
+  console.log(`Running server on http://${host}:${port}`);
 });
 
 app.post('/post', (req, res) => {
-    return res.sendStatus(200);
+  return res.sendStatus(200);
 });

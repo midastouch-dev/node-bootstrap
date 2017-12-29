@@ -10,8 +10,8 @@ describe('TestFileName', () => {
 
   it('test description', (done) => {
 
-  	let testResult = true;
-  	let correctResult = true;
+    let testResult = true;
+    let correctResult = true;
 
     assert.equal(testResult, correctResult, 'test function');
     done();
