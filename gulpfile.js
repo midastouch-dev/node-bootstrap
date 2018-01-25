@@ -20,7 +20,6 @@ gulp.on('err', (err) => {
 // Gulp Commands
 gulp.task('default', (done) => {
   runSequence('compile', done);
-  throw Error('bluh');
 });
 
 gulp.task('compile', (done) => {
