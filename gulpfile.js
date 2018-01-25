@@ -7,8 +7,21 @@ const runSequence = require('run-sequence');
 
 const testFiles = ['./test/**/*.test.js'];
 
+// Gulp Events
+gulp.on('stop', () => {
+  process.exit(0);
+});
+
+gulp.on('err', (err) => {
+  console.error(err);
+  process.exit(1);
+});
+
 // Gulp Commands
-gulp.task('default', ['compile']);
+gulp.task('default', (done) => {
+  runSequence('compile', done);
+  throw Error('bluh');
+});
 
 gulp.task('compile', (done) => {
   runSequence('clean', 'build', 'test', done);
